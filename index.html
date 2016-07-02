@@ -11,13 +11,35 @@
     </script>
     
     <style type="text/css">
+    	.order_header{
+    		background-color:rgb(58,58,58);
+    	}
+    	.order_back{
+    		color: white;
+    	}
     	#filter{
     		float: right;
     		border: 0px;
+    		color: white;
+    		line-height: 44px;
+    		
     	}
+    	#filter span{
+    		border-left:2px solid rgb(49,49,49) ;
+    		padding-left: 10px;
+    	}
+    	
     	.order_title{
     		text-align: left;
+    		
     	}
+    	
+    	.order_title span{
+    		border-left:2px solid rgb(49,49,49) ;
+    		color: white;
+    		padding-left: 10px;
+    	}
+    	
     	#month_group{
     		font-size: 13px;
     		font-family: "黑体";
@@ -87,10 +109,10 @@
 </head>
 <body>
 	
-	<header class="mui-bar mui-bar-nav">
-	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
-	    <h1 class="mui-title order_title">账单</h1>
-	   	<button type="button" class="mui-btn mui-btn-blue mui-btn-outlined" id="filter">筛选</button>
+	<header class="mui-bar mui-bar-nav order_header">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left order_back"></a>
+	    <h1 class="mui-title order_title"><span>账单</span></h1>
+	   	<span id="filter"><span>筛选</span></span>
 	</header>
 	
 	<span class="mui-content">
